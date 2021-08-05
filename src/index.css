@@ -73,9 +73,11 @@ button {
   margin: 0px 30px;
 }
 .box{
-  width: 100%;
+  /* border: 2px solid black; */
+  width: 80%;
 display: flex;
-
+flex-wrap: wrap;
+margin: 100px 100px;
 }
 .card {
   /* Add shadows to create the "card" effect */
@@ -94,4 +96,35 @@ display: flex;
 /* Add some padding inside the card container */
 .container {
   padding: 2px 16px;
+}
+@media (max-width:768px) {
+  .nav{
+    max-width: 700px;
+  }
+  button{
+    margin: 10px 66px;
+  }
+  
+}
+@media (max-width:412px) {
+  .nav{
+    max-width: 700px;
+  }
+  button{
+    margin: 10px 32px;
+    padding: 9px 26px;
+  }
+  
+.card {
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+  transition: 0.3s;
+  width: 81%;
+  height: 20vh;
+  margin: 30px 30px;
+}
+.box{
+  /* border: 2px solid black; */
+
+margin: 100px 47px;
+}
 }
