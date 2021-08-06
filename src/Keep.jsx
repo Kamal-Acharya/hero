@@ -21,6 +21,14 @@ const Keep=()=>{
        
       
       }
+      const onDelete=(id)=>{
+         alert("deleted"); 
+         setAddItem((olddata)=>
+         olddata.filter((currdata,indx)=>{
+             return indx!==id;
+         }))
+
+      };
     return(
         <>
         <div className="nav">
@@ -39,6 +47,7 @@ key={index}
 id={index}
  title={val.title}
  content={val.content}
+ deleteitem={onDelete}
  />
          )
 

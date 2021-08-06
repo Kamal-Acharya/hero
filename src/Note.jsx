@@ -2,6 +2,10 @@ import React from 'react';
 import DeleteForeverTwoToneIcon from '@material-ui/icons/DeleteForeverTwoTone';
 
 const Note = (props) => {
+  const deleteNote=()=>{
+    props.deleteitem(props.id);
+
+  }
     return (
      
             <div class="card">
@@ -9,7 +13,7 @@ const Note = (props) => {
   <div class="container">
     <h4><b>{props.title}</b></h4>
     <p>{props.content}</p>
-    <button className="btn">   <DeleteForeverTwoToneIcon /></button>
+    <button className="btn" onClick={deleteNote}>   <DeleteForeverTwoToneIcon /></button>
   
   </div>
 </div>
