@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 
 const CreateNote=(props)=>{
 const [note,Setnote]=useState({
-  title: " ",
-  content: " ",
+  title: "",
+  content: "",
 });
 
 const change=(event)=>{
@@ -49,7 +49,7 @@ Setnote({
             name="content"></textarea>
       
       </form>
-      <button onClick={addEvent}>Submit</button>
+      <button className="button" onClick={addEvent}>Submit</button>
   </div>
 
         </>

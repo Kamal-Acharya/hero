@@ -44,7 +44,8 @@ input{
 
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
   color: rgb(221, 224, 18);
-  font-family: 'cursive';
+  font-family:monospace;
+  font-size: 20px;
 }
 textarea{
   width: 99%;
@@ -55,8 +56,8 @@ textarea{
   background: none;
 }
 
-button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
-button {
+.button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+.button {
    margin: 10px 250px;
    padding: 15px 45px;
    text-align: center;
@@ -69,7 +70,7 @@ button {
    display: block;
  }
 
- button:hover {
+ .button:hover {
    background-position: right center; /* change the direction of the change here */
    color: #fff;
    text-decoration: none;
@@ -77,7 +78,7 @@ button {
 .note{
   height: 100px;
   width: 300px;
-color: white;
+color:black;
   margin: 0px 30px;
 }
 .box{
@@ -89,12 +90,14 @@ margin: 100px 100px;
 }
 .card {
   /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 15px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 23%;
-  color: white;
+  color:black;
+background-color: white;
   height: 20vh;
   margin: 123px 30px;
+  border-radius: 20px;
 }
 
 /* On mouse-over, add a deeper shadow */
@@ -110,7 +113,7 @@ margin: 100px 100px;
   .nav{
     max-width: 700px;
   }
-  button{
+  .button{
     margin: 10px 66px;
   }
   
@@ -126,8 +129,8 @@ margin: 100px 100px;
   .nav{
     max-width: 700px;
   }
-  button{
-    margin: 111px 56px;
+  .button{
+    margin: 133px 56px;
     padding: 9px 26px;
   }
   
@@ -137,7 +140,8 @@ margin: 100px 100px;
   width: 81%;
   height: 20vh;
   margin: 30px 30px;
-  color: white;
+  color:black;
+  border-radius: 20px;
 }
 
 .box{
@@ -155,9 +159,14 @@ margin: 100px 47px;
 }
 }
 @media (max-width:360px) {
-  button{
+  .button{
     margin: 88px 36px;
     padding: 9px 26px;
   }
   
+}
+.btn{
+  float: right;
+  background: none;
+  border: none;
 }
