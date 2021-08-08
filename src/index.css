@@ -177,7 +177,14 @@ margin: 100px 47px;
     margin: 88px 36px;
     padding: 9px 26px;
   }
+  .CreateNote{
+    border:2px solid #ddd;
+    transform: translate(37%,15%);
+    height: 49vh;
+    width: 55%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   
+  }
 }
 .btn{
   margin-left: 20px;
