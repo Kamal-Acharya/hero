@@ -6,7 +6,7 @@
 body {
   margin: 0;
   padding: 0%;
-  background: url("bc.jpg");
+  background: url("bc4.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,12 +27,14 @@ body {
 .CreateNote{
   border:2px solid #ddd;
   transform: translate(80%,15%);
-  height: 35vh;
+  height: 37vh;
   width: 40%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  border-radius: 10px;
 
 }
-input{
+/* input{
   width: 99%;
   height: 50px;
   outline: none;
@@ -40,21 +42,21 @@ input{
  border: none;
  color: white;
  border-bottom: 2px solid black;
-}
+} */
 
-::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+/* ::-webkit-input-placeholder { 
   color: rgb(221, 224, 18);
   font-family:monospace;
   font-size: 20px;
-}
-textarea{
+} */
+/* textarea{
   width: 99%;
   height: 20vh;
   color: white;
   outline: none;
   border: none;
   background: none;
-}
+} */
 
 .button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
 .button {
@@ -86,7 +88,7 @@ color:black;
   width: 80%;
 display: flex;
 flex-wrap: wrap;
-margin: 100px 100px;
+margin:90px 250px;
 }
 .card {
   /* Add shadows to create the "card" effect */
@@ -116,11 +118,23 @@ background-color: white;
   .button{
     margin: 10px 66px;
   }
+  .card {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    transition: 0.3s;
+    width: 70%;
+    height: 20vh;
+    margin: 30px 30px;
+    color:black;
+    border-radius: 20px;
+  }
+  .box{
+    margin:100px 100px;
+  }
   
 }
 @media (max-width:412px) {
   body{
-    background: url("bc3.jpg");
+    /* background: url("bc3.jpg"); */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -152,7 +166,7 @@ margin: 100px 47px;
 .CreateNote{
   border:2px solid #ddd;
   transform: translate(37%,15%);
-  height: 49vh;
+  height: 41vh;
   width: 55%;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
@@ -166,7 +180,15 @@ margin: 100px 47px;
   
 }
 .btn{
+  margin-left: 20px;
+background-color: orange;
+}
+.btns{
   float: right;
   background: none;
   border: none;
+  
+}
+label{
+  margin-left: 20px;
 }

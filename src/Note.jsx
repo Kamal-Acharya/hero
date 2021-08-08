@@ -13,7 +13,7 @@ const Note = (props) => {
   <div class="container">
     <h4><b>{props.title}</b></h4>
     <p>{props.content}</p>
-    <button className="btn" onClick={deleteNote}>   <DeleteForeverTwoToneIcon /></button>
+    <button className="btns" onClick={deleteNote}>   <DeleteForeverTwoToneIcon /></button>
   
   </div>
 </div>
